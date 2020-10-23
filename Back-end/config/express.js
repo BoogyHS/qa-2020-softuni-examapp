@@ -14,8 +14,8 @@ module.exports = app => {
         saveUninitialized: false
     }));
     app.use(cors({
-        // origin: 'http://localhost:5500',
-        // credentials: true
+        origin: 'https://qa-softuni-frontend.herokuapp.com',
+        credentials: true
       }))
     app.use(bodyParser.json());
     app.use((err, req, res, next) => {

@@ -8,4 +8,4 @@ app.get('/', (req, res) => {
     res.render(path.join(__dirname + '/index.html'));
 });
 
-app.listen('5500', console.log('Listening on port 5500...'));
+app.listen(process.env.PORT || '5500', console.log('Listening on...'));
