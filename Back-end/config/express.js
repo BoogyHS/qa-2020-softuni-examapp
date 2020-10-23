@@ -13,7 +13,10 @@ module.exports = app => {
         resave: false,
         saveUninitialized: false
     }));
-    app.use(cors())
+    app.use(cors({
+        // origin: 'http://localhost:5500',
+        // credentials: true
+      }))
     app.use(bodyParser.json());
     app.use((err, req, res, next) => {
         if (err) {

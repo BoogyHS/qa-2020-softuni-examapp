@@ -20,7 +20,7 @@ export default class API {
     }
 
     host(endpoint) {
-        return `http://localhost:${port}/${endpoint}`;
+        return `https://git.heroku.com/qa-2020-softuni.git/${endpoint}`;
     }
 
     getOptions(headers) {
